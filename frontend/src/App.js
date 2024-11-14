@@ -1,12 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
-  );
+const App = () => {
+    return (
+        <h1>TESTING IF I DIDNT MESS ANYTHING UP WHEN DELETING BUILT-IN CODE IN SRC</h1>
+    );
 }
 
 export default App;
