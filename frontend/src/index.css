@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    /* group a bunch of css in one className */
+    .tri-angle{
+    object-position: bottom;
+    border-top-width: 100px;
+    border-bottom-width: 100px;
+    border-right-width: 100px;
+    border-left-width: 100px;
+    border-top-color:transparent;
+    border-bottom-color: transparent;
+    border-left-color: whitesmoke;
+    border-right: transparent;
+    }
+}
+
+/*This Changes the entire websites background */
+@layer base{
+    html{
+        @apply bg-gray-800 hover:bg-gray-600;
+    }
+}
+
+@layer utilities {
+    .delay-ani-2s{
+        animation-delay: 2s;
+    }
+}

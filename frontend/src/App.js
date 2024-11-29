@@ -1,5 +1,5 @@
 import React from 'react';
-import Test from './components/Test';
+import Project from './components/project';
 import "./index.css"
 const TestProject = { //Testing Props 
     "Title" : "Dynamic Speed Limit Sign",
@@ -9,9 +9,14 @@ const TestProject = { //Testing Props
 
 const App = () => {
     return (
-        <div >
-            <h1>Hello World</h1>
-            <Test tProp={TestProject}/>
+        <div className="min-h-screen flex items-center justify-center px-16 bg-gray-800 hover:bg-gray-700">
+            <div className="relative w-full max-w-lg">
+                <div className="top-0 -left-4 w-0 h-0 tri-angle animate-spinup">
+
+                </div>
+
+            </div>
+
         </div>
     );
 }
