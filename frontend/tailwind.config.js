@@ -6,13 +6,13 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        spinup: {
-          '0%' : { transform: 'translateY(100%) rotate(0deg)'},
+        Fadeout: {
+          '0%' : { transform: 'translateY(100%) opa(0deg)'},
           '100%': { transform: 'translateY(-100%) rotate(360deg)'},
         }
       },
       animation: {
-        spinup: "spinup 5s linear infinite"
+        Fadeout: "Fadeout 5s alternate infinite",
       },
     },
   },
