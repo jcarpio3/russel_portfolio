@@ -7,12 +7,12 @@ module.exports = {
     extend: {
       keyframes: {
         Fadeout: {
-          '0%' : { transform: 'translateY(100%) opa(0deg)'},
-          '100%': { transform: 'translateY(-100%) rotate(360deg)'},
+          from : { opacity: 1},
+          to : { opacity: 0},
         }
       },
       animation: {
-        Fadeout: "Fadeout 5s alternate infinite",
+        Fadeout: "Fadeout 5s",
       },
     },
   },

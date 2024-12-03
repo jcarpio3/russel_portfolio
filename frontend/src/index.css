@@ -21,12 +21,6 @@
 /*This Changes the entire websites background */
 @layer base{
     html{
-        @apply bg-gray-800 hover:bg-gray-600;
-    }
-}
-
-@layer utilities {
-    .delay-ani-2s{
-        animation-delay: 2s;
+        @apply bg-gray-800;
     }
 }
