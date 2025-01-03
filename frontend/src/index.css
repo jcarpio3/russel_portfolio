@@ -4,23 +4,12 @@
 
 @layer components {
     /* group a bunch of css in one className */
-    .tri-angle{
-    position: sticky; /*Position relative to the viewport */
-    object-position: bottom;
-    border-top-width: 10px;
-    border-bottom-width: 10px;
-    border-right-width: 10px;
-    border-left-width: 10px;
-    border-top-color:transparent;
-    border-bottom-color: transparent;
-    border-left-color: whitesmoke;
-    border-right: transparent;
-    }
+
 }
 
 /*This Changes the entire websites background */
 @layer base{
     html{
-        @apply bg-gray-800;
+        @apply bg-gray-900
     }
 }

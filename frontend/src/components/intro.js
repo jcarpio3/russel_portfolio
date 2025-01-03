@@ -1,34 +1,38 @@
-import React from "react"
 import Typewriter from 'typewriter-effect';
 
-function tWords(Typer,String,tSpeed,dSpeed,pTime, dAmount) {
+function tWords(Typer,String,tSpeed,dSpeed,pTime, dAmount, DelAll = false, fastDel = false) {
     Typer.changeDelay(tSpeed).changeDeleteSpeed(dSpeed)
-      .typeString(String)
-      .pauseFor(pTime)
-      .deleteChars(dAmount)
+    .typeString(String)
+    .pauseFor(pTime)
+    if (!DelAll & dAmount > 0){
+        Typer.deleteChars(dAmount)
+        return
+    }
+    if (fastDel & DelAll) {
+        Typer.callFunction(() => {
+            document.getElementsByClassName("Typewriter__wrapper")[0].innerText = " "
+        }).pauseFor(200)
+        return
+    }
+    Typer.deleteAll()
 }
+
 function deleteIntro() {
     document.getElementById("intro").remove()
 }
 
 const Intro = ({}) => {
     return (
-        <div className='bg-black w-full h-full text-center content-center text-white absolute text-3xl' id="intro">
+        <div className='bg-black overflow-y w-full h-full text-center content-center text-white fixed text-3xl' id="intro">
             <Typewriter onInit={(typewriter) =>{
                 typewriter.start()
-                tWords(typewriter,'Console.writeline("Hello World!")',5,5,1000,20)
-                typewriter.callFunction(() => {
-                    document.getElementsByClassName("Typewriter__wrapper")[0].innerText = ""
-                })
-                tWords(typewriter,'PrintF("Hello World!")',4,4,500,17)
-                tWords(typewriter,'("Hello World!")',4,4,400,11)
-                typewriter.callFunction(() => {
-                    document.getElementsByClassName("Typewriter__wrapper")[0].innerText = ""
-                })
-                tWords(typewriter,'Echo "Hello World!"',3,3,200,11)
-                typewriter.callFunction(() => {
-                    document.getElementsByClassName("Typewriter__wrapper")[0].innerText = ""
-                })
+                
+                //Created function to delete redundant code 
+                tWords(typewriter,'Console.Writeline("Hello World!")',5,1,1000,-1,true)
+                tWords(typewriter,'PrintF("Hello World!")',4,1,500,17)
+                tWords(typewriter,'("Hello World!")',4,1,500,0,true,true) 
+                tWords(typewriter,'Echo "Hello World!"',3,1,500,0,true,true)
+                
                 typewriter.changeDelay(1).changeDeleteSpeed(50)
                 .typeString("Hello World!").pauseFor(1000)
                 .deleteChars(1).pauseFor(1000).callFunction(() => {
