@@ -1,12 +1,45 @@
 import Project from "./project"
 
-
 //This was just used to test components but its the base outline for how projects will be shown
-const TestProject = { //Testing Props 
-    "Title" : "Dynamic Speed Limit Sign",
-    "Image" : "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SpongeBob_SquarePants_character.svg/800px-SpongeBob_SquarePants_character.svg.png",
-    "Github" : "https://github.com/"
-}
+// const TestProject = { //Testing Props 
+//     "Title" : "Dynamic Speed Limit Sign",
+//     "Image" : "https://lh3.googleusercontent.com/RUg9YJuY2cPjh5znR5ZLqLJIBrm1CM2JuwCS1XP6g31ZDPa_NR--jR0JAum5qDbl2g5UKgBwM4SHSuyiWqjyd7VhBUI=s1280-w1280-h800",
+//     "Github" : "https://github.com/"
+// }
+
+ 
+const listProject = [
+    {
+        "Title" : " 1",
+        "Image" : "https://sao-p.net/assets/img/top/img_kv02.jpg",
+        "Github" : "https://github.com/"
+    },
+    {
+        "Title" : " 2",
+        "Image" : "https://lh3.googleusercontent.com/RUg9YJuY2cPjh5znR5ZLqLJIBrm1CM2JuwCS1XP6g31ZDPa_NR--jR0JAum5qDbl2g5UKgBwM4SHSuyiWqjyd7VhBUI=s1280-w1280-h800",
+        "Github" : "https://github.com/"
+    },
+    {
+        "Title" : " 3",
+        "Image" : "https://uploads.dailydot.com/2024/09/roblox-face-meme.jpg?q=65&auto=format&w=1600&ar=2:1&fit=crop",
+        "Github" : "https://github.com/"
+    },
+    {
+        "Title" : " 4",
+        "Image" : "https://pngimg.com/d/spongebob_PNG32.png",
+        "Github" : "https://github.com/"
+    },
+    {
+        "Title" : " 5",
+        "Image" : "https://lh3.googleusercontent.com/RUg9YJuY2cPjh5znR5ZLqLJIBrm1CM2JuwCS1XP6g31ZDPa_NR--jR0JAum5qDbl2g5UKgBwM4SHSuyiWqjyd7VhBUI=s1280-w1280-h800",
+        "Github" : "https://github.com/"
+    },
+    {
+        "Title" : " 6",
+        "Image" : "https://lh3.googleusercontent.com/RUg9YJuY2cPjh5znR5ZLqLJIBrm1CM2JuwCS1XP6g31ZDPa_NR--jR0JAum5qDbl2g5UKgBwM4SHSuyiWqjyd7VhBUI=s1280-w1280-h800",
+        "Github" : "https://github.com/"
+    }
+]
 
 const MainPage = () => {
     return (
@@ -30,14 +63,14 @@ const MainPage = () => {
                 <div className="mProjects">
                     <h1>---------------------------------</h1>
                     <h3>Projects</h3>
-                    <div className="inline-flex flex-wrap ml-[25%] mr-[25%] ">
+                    <div className="inline-flex flex-wrap md:ml-[25%] md:mr-[25%] m-auto"> 
                         {/* When implementing a component with a variable just do <Component variable={Foo}/> */}
-                        <Project pData={TestProject}/> 
-                        <Project pData={TestProject}/>
-                        <Project pData={TestProject}/>
-                        <Project pData={TestProject}/>
-                        <Project pData={TestProject}/>
-                        <Project pData={TestProject}/>
+                        <Project pData={listProject[0]}/> 
+                        <Project pData={listProject[1]}/>
+                        <Project pData={listProject[2]}/>
+                        <Project pData={listProject[3]}/>
+                        <Project pData={listProject[4]}/>
+                        <Project pData={listProject[5]}/> 
                     </div>
                 </div>
 

@@ -21,9 +21,9 @@ function deleteIntro() {
     document.getElementById("intro").remove()
 }
 
-const Intro = ({}) => {
+const Intro = () => {
     return (
-        <div className='bg-black overflow-y w-full h-full text-center content-center text-white fixed text-3xl' id="intro">
+        <div className='bg-black overflow-y w-full h-full text-center content-center text-white fixed text-3xl block' id="intro">
             <Typewriter onInit={(typewriter) =>{
                 typewriter.start()
                 

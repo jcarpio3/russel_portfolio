@@ -8,19 +8,26 @@
 import "./index.css"
 
 // Component imports
-import mainPage from "./components/MainPage";
 import {useCookies} from 'react-cookie'
 import MainPage from "./components/MainPage";
 import Intro from "./components/intro";
+import Project from "./components/project";
 
 
 const App = () => {
     const [cookies, setCookie] = useCookies(['Visited'])
 
+    const TestProject = { //Testing Props 
+        "Title" : "Dynamic Speed Limit Sign",
+        "Image" : "https://cdn.mos.cms.futurecdn.net/TyZeyVhdQsUkrwGose86xR-1200-80.jpg",
+        "Github" : "https://github.com/"
+    }
+
+    //fTime is a check to see if the user has visited before to stop the intro from repeating
     function fTime() {
         if (cookies.Visited){
             console.log("Page was visited")
-            return (<div><MainPage/></div>)
+            return (<div><Project pData={TestProject}/>a</div>)
         }
         setCookie("Visited", true, {path: "/"});
         return (<div>
@@ -28,6 +35,7 @@ const App = () => {
             <MainPage/>
         </div>)
     }
+
     return (
         fTime()
     );

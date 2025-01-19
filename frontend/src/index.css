@@ -5,7 +5,7 @@
 @layer components {
     /* group a bunch of css in one className */
     .mPage {
-        @apply text-white w-fit text-center items-center justify-center flex;
+        @apply text-white w-fit text-center items-center justify-center flex m-auto;
     }
 }
 
