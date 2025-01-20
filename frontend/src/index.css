@@ -7,11 +7,20 @@
     .mPage {
         @apply text-white w-fit text-center items-center justify-center flex m-auto;
     }
+    .pTitle{
+        @apply relative bg-gray-950 rounded-t-lg shadow-xl;
+    }
+    .pbImage{
+        @apply absolute h-full w-full object-cover opacity-30 rounded-xl shadow-xl
+    }
+    .pfImage{
+        @apply absolute h-full w-full object-cover rounded-xl shadow-xl
+    }
 }
 
 /*This Changes the entire websites background */
 @layer base{
     html{
-        @apply bg-gray-900
+        @apply bg-gray-900 
     }
 }

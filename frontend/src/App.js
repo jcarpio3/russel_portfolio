@@ -27,7 +27,7 @@ const App = () => {
     function fTime() {
         if (cookies.Visited){
             console.log("Page was visited")
-            return (<div><Project pData={TestProject}/>a</div>)
+            return (<div><MainPage/></div>)
         }
         setCookie("Visited", true, {path: "/"});
         return (<div>
