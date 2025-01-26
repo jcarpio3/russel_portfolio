@@ -11,17 +11,10 @@ import "./index.css"
 import {useCookies} from 'react-cookie'
 import MainPage from "./components/mainPage";
 import Intro from "./components/intro";
-import project from "./components/project";
 
 
 const App = () => {
     const [cookies, setCookie] = useCookies(['Visited'])
-
-    const TestProject = { //Testing Props 
-        "Title" : "Dynamic Speed Limit Sign",
-        "Image" : "https://cdn.mos.cms.futurecdn.net/TyZeyVhdQsUkrwGose86xR-1200-80.jpg",
-        "Github" : "https://github.com/"
-    }
 
     //fTime is a check to see if the user has visited before to stop the intro from repeating
     function fTime() {

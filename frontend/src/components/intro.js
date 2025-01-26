@@ -24,7 +24,7 @@ function deleteIntro() {
 
 const Intro = () => {
     return (
-        <div className='bg-black overflow-y w-full h-full text-center content-center text-white z-50 absolute text-3xl block inset-0' id="intro">
+        <div className='bg-black overflow-y w-full h-full text-center content-center text-white z-50 absolute block inset-0 md:text-3xl text-xs' id="intro">
             {document.body.classList.add("ScrollOff")}
             <Typewriter onInit={(typewriter) =>{
                 typewriter.start()

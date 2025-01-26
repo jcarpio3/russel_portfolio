@@ -9,7 +9,6 @@ import IcoData from '../assets/data/skiData.json'
 //     "Image" : "https://lh3.googleusercontent.com/RUg9YJuY2cPjh5znR5ZLqLJIBrm1CM2JuwCS1XP6g31ZDPa_NR--jR0JAum5qDbl2g5UKgBwM4SHSuyiWqjyd7VhBUI=s1280-w1280-h800",
 //     "Github" : "https://github.com/"
 // }
-const Testsss = IcoData
 
 const MainPage = () => {
     return (

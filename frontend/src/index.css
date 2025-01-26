@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
     /* group a bunch of css in one className */
     .mPage {
@@ -19,6 +20,7 @@
     .ScrollOff{
         @apply h-full overflow-hidden
     }
+    
 }
 
 /*This Changes the entire websites background */

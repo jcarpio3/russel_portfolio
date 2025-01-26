@@ -6,6 +6,15 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
+
+        Ascend: {
+          "0%,100%": {
+            transform: "translateY(-2px)"
+          },
+          "50%": {
+            transform: "translateY(0px)"
+          }
+        },
         Fadeout: {
           from : { opacity: 1},
           to : { opacity: 0},
@@ -13,6 +22,7 @@ module.exports = {
       },
       animation: {
         Fadeout: "Fadeout 5s",
+        Ascend: "Ascend 1s ease-in-out infinite"
       },
     },
   },
