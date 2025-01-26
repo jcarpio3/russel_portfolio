@@ -16,6 +16,9 @@
     .pfImage{
         @apply absolute h-full w-full object-cover rounded-xl shadow-xl
     }
+    .ScrollOff{
+        @apply h-full overflow-hidden
+    }
 }
 
 /*This Changes the entire websites background */

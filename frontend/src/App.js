@@ -9,7 +9,7 @@ import "./index.css"
 
 // Component imports
 import {useCookies} from 'react-cookie'
-import MainPage from "./components/MainPage";
+import MainPage from "./components/mainPage";
 import Intro from "./components/intro";
 import Project from "./components/project";
 

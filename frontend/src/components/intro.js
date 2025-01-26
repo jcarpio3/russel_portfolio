@@ -18,12 +18,14 @@ function tWords(Typer,String,tSpeed,dSpeed,pTime, dAmount, DelAll = false, fastD
 }
 
 function deleteIntro() {
+    document.body.classList.remove("ScrollOff")
     document.getElementById("intro").remove()
 }
 
 const Intro = () => {
     return (
         <div className='bg-black overflow-y w-full h-full text-center content-center text-white z-50 absolute text-3xl block inset-0' id="intro">
+            {document.body.classList.add("ScrollOff")}
             <Typewriter onInit={(typewriter) =>{
                 typewriter.start()
                 
