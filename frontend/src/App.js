@@ -11,7 +11,7 @@ import "./index.css"
 import {useCookies} from 'react-cookie'
 import MainPage from "./components/mainPage";
 import Intro from "./components/intro";
-import Project from "./components/project";
+import project from "./components/project";
 
 
 const App = () => {

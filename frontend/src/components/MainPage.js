@@ -1,6 +1,7 @@
 import Project from "./project"
 import Icon from "./icon"
 import ProData from '../assets/data/projData.json'
+import IcoData from '../assets/data/skiData.json'
 
 //This was just used to test components but its the base outline for how projects will be shown
 // const TestProject = { //Testing Props 
@@ -8,6 +9,7 @@ import ProData from '../assets/data/projData.json'
 //     "Image" : "https://lh3.googleusercontent.com/RUg9YJuY2cPjh5znR5ZLqLJIBrm1CM2JuwCS1XP6g31ZDPa_NR--jR0JAum5qDbl2g5UKgBwM4SHSuyiWqjyd7VhBUI=s1280-w1280-h800",
 //     "Github" : "https://github.com/"
 // }
+const Testsss = IcoData
 
 const MainPage = () => {
     return (
@@ -17,7 +19,6 @@ const MainPage = () => {
                     <h1>Hi!</h1>
                     <h3>I'm Russel</h3>
                     <h3>A Full Stack Developer</h3>
-                    {console.log(ProData)}
                 </div>
 
                 <div className="mAbout">
@@ -28,6 +29,9 @@ const MainPage = () => {
                     <h1>---------------------------------</h1>
                     <h3>Skills </h3>
                     <div className="inline-flex flex-wrap md:ml-[25%] md:mr-[25%] m-auto">
+                        {Array.from({ length: IcoData.length}).map((n,index) => (
+                            <Icon iData={IcoData[index]}/>
+                        ))}
                     </div>
                 </div>
 
@@ -36,21 +40,9 @@ const MainPage = () => {
                     <h3>Projects</h3>
                     <div className="inline-flex flex-wrap md:ml-[25%] md:mr-[25%] m-auto"> 
                         {/* When implementing a component with a variable just do <Component variable={Foo}/> */}
-                        <Project pData={ProData[0]}/>
-                        <Project pData={ProData[1]}/>
-                        <Project pData={ProData[2]}/>
-                        <Project pData={ProData[3]}/>
-                        <Project pData={ProData[4]}/>
-                        <Project pData={ProData[0]}/>
-                        <Project pData={ProData[1]}/>
-                        <Project pData={ProData[2]}/>
-                        <Project pData={ProData[3]}/>
-                        <Project pData={ProData[4]}/>
-                        <Project pData={ProData[0]}/>
-                        <Project pData={ProData[1]}/>
-                        <Project pData={ProData[2]}/>
-                        <Project pData={ProData[3]}/>
-                        <Project pData={ProData[4]}/>
+                        {Array.from({ length: ProData.length}).map((n,index) => (
+                            <Project pData={ProData[index]}/>
+                        ))}
                     </div>
                 </div>
 
