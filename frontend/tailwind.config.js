@@ -8,7 +8,7 @@ module.exports = {
       keyframes: {
         anilines:{
           "0%": {
-            transform: "translateY(500px)"
+            transform: "translateY(px)"
           },
           "100%": {
             transform: "translateY(-1200px)"
