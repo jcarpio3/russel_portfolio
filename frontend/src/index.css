@@ -6,26 +6,35 @@
 @layer components {
     /* group a bunch of css in one className */
     .mPage {
-        @apply text-white w-fit text-center items-center justify-center flex m-auto;
+        @apply text-gray-300 w-fit text-center items-center justify-center flex m-auto;
+    }
+    .mTitle{
+        @apply w-full h-[80vh] mt-[10vh] m-auto bg-gray-900 border-gray-800 border-t-[20px] border-b-[20px]
     }
     .pTitle{
-        @apply relative bg-gray-950 rounded-t-lg shadow-xl;
+        @apply relative bg-gray-800 rounded-t-lg shadow-xl;
     }
     .pbImage{
-        @apply absolute h-full w-full object-cover opacity-30 rounded-xl shadow-xl
+        @apply absolute h-full w-full object-cover opacity-30 rounded-xl shadow-xl;
     }
     .pfImage{
-        @apply absolute h-full w-full object-cover rounded-xl shadow-xl
+        @apply absolute h-full w-full object-cover rounded-xl shadow-xl;
     }
     .ScrollOff{
-        @apply h-full overflow-hidden
+        @apply h-full overflow-hidden;
     }
-    
 }
 
 /*This Changes the entire websites background */
 @layer base{
     html{
-        @apply bg-gray-900 
+        @apply bg-black;
     }
+    hr{
+        @apply md:w-[50%] w-[80%] border-[3px] border-solid rounded-lg m-auto border-y-gray-800; 
+    }
+    h3{
+        @apply text-lg
+    }
+
 }

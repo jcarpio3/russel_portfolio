@@ -14,10 +14,23 @@ const MainPage = () => {
     return (
         <div className="mPage">
             <div>
-                <div className="">
+                <div className="mTitle">
                     <h1>Hi!</h1>
                     <h3>I'm Russel</h3>
                     <h3>A Full Stack Developer</h3>
+
+                    <ul className="datalines">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
                 </div>
 
                 <div className="mAbout">
@@ -25,8 +38,8 @@ const MainPage = () => {
                 </div>
 
                 <div className="mSkills">
-                    <h1>---------------------------------</h1>
-                    <h3>Skills </h3>
+                    <hr/>
+                    <h3>Skills</h3>
                     <div className="inline-flex flex-wrap md:ml-[25%] md:mr-[25%] m-auto">
                         {Array.from({ length: IcoData.length}).map((n,index) => (
                             <Icon iData={IcoData[index]}/>
@@ -35,7 +48,7 @@ const MainPage = () => {
                 </div>
 
                 <div className="mProjects">
-                    <h1>---------------------------------</h1>
+                    <hr/>
                     <h3>Projects</h3>
                     <div className="inline-flex flex-wrap md:ml-[25%] md:mr-[25%] m-auto"> 
                         {/* When implementing a component with a variable just do <Component variable={Foo}/> */}
@@ -46,12 +59,12 @@ const MainPage = () => {
                 </div>
 
                 <div className="mExp">
-                    <h1>---------------------------------</h1> {/** These should shine when hovered over them */}
+                    <hr/>
                     <h3>Education/Experience</h3>
                 </div>
 
                 <div className="mContact">
-                    <h1>---------------------------------</h1>
+                    <hr/>
                     <h3>Contacts</h3>
                 </div>
             </div>

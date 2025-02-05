@@ -11,7 +11,7 @@ const Project = ({pData}) => {
                         <img className="pbImage" src={pData.Image} alt={pData.Alt}/>
                         <h2 className="pTitle">{pData.Title}</h2>
                         <br></br>
-                        <p className="text-xs">{pData.Desc}</p>
+                        <p className="text-xs text-white text-opacity-100">{pData.Desc}</p>
                     </div>
                 </div>
             </a>
