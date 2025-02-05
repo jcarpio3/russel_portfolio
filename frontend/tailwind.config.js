@@ -6,7 +6,14 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-
+        anilines:{
+          "0%": {
+            transform: "translateY(500px)"
+          },
+          "100%": {
+            transform: "translateY(-1200px)"
+          }
+        },
         Ascend: {
           "0%,100%": {
             transform: "translateY(-2px)"
@@ -22,7 +29,8 @@ module.exports = {
       },
       animation: {
         Fadeout: "Fadeout 5s",
-        Ascend: "Ascend 1s ease-in-out infinite"
+        Ascend: "Ascend 1s ease-in-out infinite",
+        anilines: "anilines 5s linear infinite"
       },
     },
   },

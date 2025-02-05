@@ -9,7 +9,7 @@
         @apply text-gray-300 w-fit text-center items-center justify-center flex m-auto;
     }
     .mTitle{
-        @apply w-full h-[80vh] mt-[10vh] m-auto bg-gray-900 border-gray-800 border-t-[20px] border-b-[20px]
+        @apply w-full h-[80vh] mt-[10vh] mb-[10vh] contain-content bg-gray-900 border-gray-800 border-t-[20px] border-b-[20px] 
     }
     .pTitle{
         @apply relative bg-gray-800 rounded-t-lg shadow-xl;
@@ -22,6 +22,12 @@
     }
     .ScrollOff{
         @apply h-full overflow-hidden;
+    }
+    .datalines{
+        @apply absolute top-0 left-0 w-full h-full overflow-hidden
+    }
+    .datalines li{
+        @apply absolute block list-none animate-anilines w-1 h-[300px] bottom-[-150px] bg-gradient-to-b from-transparent via-white to-transparent 
     }
 }
 

@@ -15,10 +15,6 @@ const MainPage = () => {
         <div className="mPage">
             <div>
                 <div className="mTitle">
-                    <h1>Hi!</h1>
-                    <h3>I'm Russel</h3>
-                    <h3>A Full Stack Developer</h3>
-
                     <ul className="datalines">
                         <li></li>
                         <li></li>
@@ -29,8 +25,9 @@ const MainPage = () => {
                         <li></li>
                         <li></li>
                         <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
-
                 </div>
 
                 <div className="mAbout">
