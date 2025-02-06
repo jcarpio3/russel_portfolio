@@ -9,7 +9,7 @@
         @apply text-gray-300 w-fit text-center items-center justify-center flex m-auto;
     }
     .mTitle{
-        @apply w-full h-[80vh] mt-[10vh] mb-[10vh] contain-content bg-gray-900 border-gray-800 border-t-[20px] border-b-[20px] 
+        @apply w-full h-[80vh] mt-[10vh] mb-[10vh] content-center contain-content bg-gray-800 border-gray-900 border-t-[20px] border-b-[20px] 
     }
     .pTitle{
         @apply relative bg-gray-800 rounded-t-lg shadow-xl;
@@ -27,54 +27,44 @@
         @apply absolute top-0 left-0 w-full h-full overflow-hidden
     }
     .datalines li{
-        @apply absolute block list-none animate-anilines w-1 h-[300px] bottom-[-300px] bg-gradient-to-b from-transparent via-white to-transparent 
+        @apply absolute block list-none w-1 h-[300px] bottom-[-300px] bg-gradient-to-b from-transparent via-white to-transparent 
     }
     .datalines li:nth-child(1){
-        animation-delay: 1000ms;
-        @apply left-[5%]
+        @apply left-[5%] animate-[anilines_10s_linear_infinite]
     }
     .datalines li:nth-child(2){
-        animation-delay: 2000ms;
-        @apply left-[15%]
+        @apply left-[15%] animate-[anilines_4s_linear_infinite]
     }
     .datalines li:nth-child(3){
-        animation-delay: 1500ms;
-        @apply left-[31%]
+        @apply left-[31%] animate-[anilines_7s_linear_infinite]
     }
     .datalines li:nth-child(4){
-        animation-delay: 3500ms;
-        @apply left-[30%]
+        @apply left-[60%] animate-[anilines_2s_linear_infinite]
     }
     .datalines li:nth-child(5){
-        animation-delay: 3000ms;
-        @apply left-[43%]
+        @apply left-[43%] animate-[anilines_6s_linear_infinite]
     }
     .datalines li:nth-child(6){
-        animation-delay: 2500ms;
-        @apply left-[69%]
+        @apply left-[69%] animate-[anilines_3s_linear_infinite]
     }
     .datalines li:nth-child(7){
-        animation-delay: 4000ms;
-        @apply left-[80%]
+        @apply left-[80%] animate-[anilines_8s_linear_infinite]
     }
     .datalines li:nth-child(8){
-        animation-delay: 4500ms;
-        @apply left-[90%]
+        @apply left-[90%] animate-[anilines_9s_linear_infinite]
     }
     .datalines li:nth-child(9){
-        animation-delay: 5000ms;
-        @apply left-[100%]
+        @apply left-[100%] animate-[anilines_5s_linear_infinite]
     }
     .datalines li:nth-child(10){
-        animation-delay: 500ms;
-        @apply left-[50%]
+        @apply left-[50%] animate-[anilines_12s_linear_infinite]
     }
 }
 
 /*This Changes the entire websites background */
 @layer base{
     html{
-        @apply bg-black;
+        @apply bg-gray-950;
     }
     hr{
         @apply md:w-[50%] w-[80%] border-[3px] border-solid rounded-lg m-auto border-y-gray-800; 

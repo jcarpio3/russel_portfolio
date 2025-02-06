@@ -15,6 +15,8 @@ const MainPage = () => {
         <div className="mPage">
             <div>
                 <div className="mTitle">
+                    <h1>Hello, I'm Russel</h1>
+                    <h1>I'm a Computer Engineering Technologist</h1>
                     <ul className="datalines">
                         <li></li>
                         <li></li>

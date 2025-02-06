@@ -30,7 +30,7 @@ module.exports = {
       animation: {
         Fadeout: "Fadeout 5s",
         Ascend: "Ascend 1s ease-in-out infinite",
-        anilines: "anilines 5s linear infinite"
+        anilines: "anilines 3s linear infinite"
       },
     },
   },
